@@ -1,0 +1,322 @@
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+body {
+    background-color: #0b121a;
+    color: #eee;
+}
+
+p{
+    font-family: 'Anonymous Pro', sans-serif;
+    font-size: 9;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.red{
+    color: #eb9d93; 
+}
+
+.purple{
+    color: #9c90ac; 
+}
+
+.blue{
+    color: #6a97bb; 
+}
+
+.wrapper {
+    height: 360px;
+    width: 450px;
+    /*This part is important for centering*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: top;
+}
+.code {
+    height: 360px;
+    width: 450px;
+}
+
+.line-one {
+    width: 42ch;
+    opacity: 0;
+    animation: typing 1s steps(42) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: .8em;
+}
+.line-two {
+    width: 41ch;
+    opacity: 0;
+    animation: typing 1s 1s steps(41) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: .8em;
+}
+.line-three {
+    width: 7ch;
+    opacity: 0;
+    animation: typing .5s 2s steps(9) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: .8em;
+}
+.line-four {
+    width: 48ch;
+    opacity: 0;
+    animation: typing 1.5s 2.5s steps(52) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: .8em;
+}
+.line-five {
+    width: 58ch;
+    opacity: 0;
+    animation: typing 1.5s 4s steps(58) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: .8em;
+}
+.line-six {
+    width: 7ch;
+    opacity: 0;
+    animation: typing .5s 5.5s steps(7) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: .8em;
+}
+.line-seven {
+    width: 48ch;
+    opacity: 0;
+    animation: typing 1.5s 6s steps(48) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: .8em;
+}
+.line-eight {
+    width: 52ch;
+    opacity: 0;
+    animation: typing 1.5s 7.5s steps(52) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: .8em;
+}
+.line-nine {
+    width: 7ch;
+    opacity: 0;
+    animation: typing .5s 9s steps(7) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: .8em;
+}
+.line-ten {
+    width: 53ch;
+    opacity: 0;
+    animation: typing 1.5s 9.5s steps(53) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: .8em;
+}
+.line-eleven {
+    width: 62ch;
+    opacity: 0;
+    animation: typing 1.5s 11s steps(62) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: .8em;
+}
+.line-twelve {
+    width: 7ch;
+    opacity: 0;
+    animation: typing .5s 12.5s steps(7) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: .8em;
+}
+.line-thirteen {
+    width: 35ch;
+    opacity: 0;
+    animation: typing 1s 13s steps(35) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: .8em;
+}
+.line-fourteen {
+    width: 48ch;
+    opacity: 0;
+    animation: typing 1.5s 14s steps(48) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: .8em;
+}
+.line-fifteen {
+    width: 20ch;
+    opacity: 0;
+    animation: typing 1s 15.5s steps(20) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: .8em;
+}
+.line-sixteen {
+    width: 50ch;
+    opacity: 0;
+    animation: typing 1.5s 16.5s steps(50) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: .8em;
+}
+.line-seventeen {
+    width: 7ch;
+    opacity: 0;
+    animation: typing .5s 18s steps(7) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: .8em;
+}
+.line-eighteen {
+    width: 7ch;
+    margin-left: .5em;
+    opacity: 0;
+    animation: typing .3s 18.5s steps(7) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: .8em;
+}
+.line-nineteen {
+    width: 2ch;
+    opacity: 0;
+    animation: typingFinal .1s 18.8s steps(2) forwards, blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: .8em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  0%{
+    opacity: 1;
+    border-right: 5px solid;
+    margin-right: 1px;
+  }
+  100%{
+    opacity: 1;
+    border-right: 0px solid;
+    opacity: 100;
+  }
+}
+
+@keyframes typingFinal {
+  from {
+    width: 0;
+  }
+  0%{
+    opacity: 1;
+    border-right: 5px solid;
+    margin-right: 0px;
+  }
+  100%{
+    opacity: 1;
+    border-right: 5px solid;
+    opacity: 100;
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+</style>
+<html class="wrapper">
+    <body class="wrapper">
+        <div class="wrapper">
+            <div class="code">
+                <p class="line-one">
+                    <span class="red">if</span> (provider <span class="blue">&amp;&amp;</span> !provider?.<span class="blue">isWalletGuard</span>){
+                </p>
+                <p class="line-two">
+                    &emsp; log.<span class="purple">debug</span>({ provider }, <span class="blue">'Added proxy'</span>);
+                </p>
+                <p>
+                    <br><br>
+                </p>
+                <p class="line-three">
+                    &emsp; <span class="red">try {</span>
+                </p>
+                <p class="line-four">
+                    &emsp; &emsp; Object.<span class="purple">defineProperty</span>(provider, <span class="blue">'request'</span>, {
+                </p>
+                <p class="line-five">
+                    &emsp; &emsp; &emsp; <span class="blue">value</span>: <span class="red">new</span> Proxy(provider.<span class="blue">request</span>, requestHandler),
+                </p>
+                <p class="line-six">
+                    &emsp; &emsp; });
+                </p>
+                <p class="line-seven">
+                    &emsp; &emsp; Object.<span class="purple">defineProperty</span>(provider, <span class="blue">'send'</span>, {
+                </p>
+                <p class="line-eight">
+                    &emsp; &emsp; &emsp; <span class="blue">value:</span> <span class="red">new</span> Proxy(provider.<span class="blue">send</span>, sendHandler),
+                </p>
+                <p class="line-nine">
+                    &emsp; &emsp; });
+                </p>
+                <p class="line-ten">
+                    &emsp; &emsp; Object.<span class="purple">defineProperty</span>(provider, <span class="blue">'sendAsync'</span>, {
+                </p>
+                <p class="line-eleven">
+                    &emsp; &emsp; &emsp; <span class="blue">value:</span> <span class="red">new</span> Proxy (provider.<span class="blue">sendAsync</span>, sendAsyncHandler),
+                </p>
+                <p class="line-twelve">
+                    &emsp; &emsp; });
+                </p>
+                <p class="line-thirteen">
+                    &emsp; &emsp; provider.<span class="blue">iswalletGuard = true</span>;
+                </p>
+                <p class="line-fourteen">
+                    &emsp; &emsp; console.<span class="purple">log</span>(<span class="blue">'Wallet Guard is running!"</span>);
+                </p>
+                <p class="line-fifteen">
+                    &emsp; } <span class="red">catch</span> (error) {
+                </p>
+                <p class="line-sixteen">
+                    &emsp; &emsp; console.<span class="purple">log</span>(<span class="blue">'Wallet Guard could not start!"</span>);
+                </p>
+                <p class="line-seventeen">
+                    &emsp; }
+                </p>
+                <p class="line-eighteen">
+                    }
+                </p>
+                <p class="line-nineteen">
+                    };
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
